@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact me</title>
+    <link href="contact.png" rel="icon">
+    <style type="text/css">
+        body{
+            background-color: cornsilk;
+        }
+       fieldset{
+        height:300px;
+        width:400px;
+        background-color:mintcream;
+        border: 2px double black;
+        border-radius: 3px;
+        box-shadow: 3px 4px grey;
+        margin: 25px;
+        }
+        legend{
+            text-align: center;
+            height:fit-content;
+            width:fit-content;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: hotpink;
+            padding: 10px;
+        }
+        button{
+            background-color: lightsalmon;
+            box-shadow: 2px 1px grey;
+            font-weight: bold;
+        }
+        button:hover{
+            background-color: lightsteelblue;
+            box-shadow: inset;
+        }
+        button:active{
+            font: 2em italic red;
+            border: 1px dashed red;
+            box-shadow:none;
+            background-color: aliceblue;
+        }
+        input{
+            border:2px solid black;
+            border-radius: 3px;
+        }
+        select,textarea{
+            border:2px solid black;
+            border-radius: 3px;
+        }
+        input:hover{
+            box-shadow:2px 2px grey;
+        }
+        input:active{
+            border:2px dotted red;
+            box-shadow:none;
+        }
+        select:hover{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <form class="FS"action="http://127.0.0.1:5500/CSS%20">
+        <fieldset>
+            <legend>Contact details</legend>
+            <table class="table">
+                <tr>
+                    <td><label>Name</label></td>
+                    <td><input type="text" maxlength="9" pattern="[a-z A-Z]"placeholder="SammetaVaishnavi" readonly></td>
+                </tr>
+                <tr> 
+                    <td><label>Email</label></td>
+                    <td><input type="mail id" placeholder="vaishnavi136@gmail.com" readonly></td>
+                </tr>
+                <tr>
+                    <td><label>Mobile</label></td>
+                    <td><input type="number" maxlength="10" pattern="{0-9}"placeholder="0987654321"readonly></td>
+                </tr>
+                <tr>
+                    <td><label>profile</label></td>
+                    <td><select><option name="ldn"checked>LINKEDIN</option>
+                                <option name="prtf">PORTOFOLIO</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Profile links </label></td>
+                    <td><textarea wrap="soft">www.linkedin.com/in/vaishnavi-sammeta-59843224a</textarea></td>
+                </tr>
+            </table>
+            <button>SUBMIT</button>
+        </fieldset>
+    </form>
+</body>
+</html>
